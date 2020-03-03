@@ -5,7 +5,7 @@ let cors = require('cors');  //เรียกใช้คนละโดเม�
 let app = express();
 
 
-app.use(cors());
+app.use(cors()); //เสริม
 
 
 app.use('/api', bodyParser.json(), router);   //[use json]
